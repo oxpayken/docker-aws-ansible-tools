@@ -13,7 +13,8 @@ WORKDIR /home/devops
 USER devops
 
 # Install awscli, ansible using virtualenv under devops user
-RUN virtualenv venv && \
+RUN mkdir .aws data && \
+    virtualenv venv && \
     ./venv/bin/pip install awscli && \
     ./venv/bin/pip install markupsafe && \
     ./venv/bin/pip install ansible && \
