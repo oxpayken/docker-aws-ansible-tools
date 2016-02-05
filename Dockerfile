@@ -13,5 +13,3 @@ RUN virtualenv venv && \
     echo 'source ~/venv/bin/activate' >> .bashrc && \
     echo 'complete -C aws_completer aws' >> .bashrc && \
     rm -rf ~/.pip/cache/
-
-RUN echo '[local]\nlocalhost\n' > /etc/ansible/hosts
