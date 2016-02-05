@@ -4,6 +4,7 @@ FROM mcpayment/docker-python
 # Add devops user for automation execution
 RUN apt-get update && \
     apt-get install --no-install-recommends -y  \
+            openssh-client \
             wget \
             git && \
     apt-get clean && \
