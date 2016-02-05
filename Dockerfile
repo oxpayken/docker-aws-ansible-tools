@@ -1,4 +1,4 @@
-FROM mcpayment/python
+FROM mcpayment/docker-python
 
 # Add a devops user for automation execution
 RUN adduser --disabled-login --gecos GECOS devops
