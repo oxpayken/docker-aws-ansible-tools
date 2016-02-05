@@ -1,7 +1,14 @@
 FROM mcpayment/docker-python
 
-# Add a devops user for automation execution
-RUN adduser --disabled-login --gecos GECOS devops
+# Add wget, git
+# Add devops user for automation execution
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y  \
+            wget \
+            git && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
+    adduser --disabled-login --gecos GECOS devops
 WORKDIR /home/devops
 USER devops
 
