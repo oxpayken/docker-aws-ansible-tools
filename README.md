@@ -10,7 +10,8 @@ To build:
 
 To run:
 
-`docker run -it --name=docker-aws-ansible -v <.aws path>:/home/devops/.aws -v <data path>:/home/devops/data mcpayment/docker-aws-ansible`
+`docker run -it --name=docker-aws-ansible -v <.aws path>:/home/devops/.aws -v <.ssh path>:/home/devops/.ssh -v <data path>:/home/devops/data mcpayment/docker-aws-ansible`
 
 - <.aws path> - .aws folder on your local, this folder contains AWS credentials
+- <.ssh path> - .ssh folder on your local, this folder contains ssh credentials
 - \<data path\> - data folder on your local, this folder contains working files (AWS, Ansible scripts etc.)
