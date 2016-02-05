@@ -1,4 +1,4 @@
-# Docker AWS nsible 
+# Docker AWS Ansible 
 
 Create a base  AWS + Ansible image.
 
