@@ -15,3 +15,15 @@ To run:
 - <.aws path> - .aws folder on your local, this folder contains AWS credentials
 - <.ssh path> - .ssh folder on your local, this folder contains ssh credentials
 - \<data path\> - data folder on your local, this folder contains working files (AWS, Ansible scripts etc.)
+
+---
+
+To fix/find out:
+
+- files in mounted folder have different permission
+
+
+## Prerequisites 
+
+- local folder .aws, .ssh, data to be mounted in container should be present or created
+
