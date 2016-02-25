@@ -21,6 +21,7 @@ To run:
 To fix/find out:
 
 - files in mounted folder have different permission
+- use virtualenv from mounted data folder
 
 
 ## Prerequisites 
