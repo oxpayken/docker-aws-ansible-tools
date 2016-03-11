@@ -17,6 +17,7 @@ USER devops
 RUN mkdir .aws data && \
     virtualenv venv && \
     ./venv/bin/pip install awscli && \
+    ./venv/bin/pip install boto && \
     ./venv/bin/pip install markupsafe && \
     ./venv/bin/pip install ansible && \
     echo 'source ~/venv/bin/activate' >> .bashrc && \
