@@ -5,6 +5,8 @@ FROM mcpayment/docker-python
 RUN apt-get update && \
     apt-get install --no-install-recommends -y  \
             openssh-client \
+            libssl-dev \
+            libffi-dev \
             wget \
             git && \
     apt-get clean && \
