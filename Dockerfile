@@ -21,6 +21,7 @@ RUN mkdir .aws data && \
     ./venv/bin/pip install awscli && \
     ./venv/bin/pip install boto && \
     ./venv/bin/pip install markupsafe && \
+    ./venv/bin/pip install "pywinrm>=0.1.1" && \
     ./venv/bin/pip install ansible && \
     echo 'source ~/venv/bin/activate' >> .bashrc && \
     echo 'complete -C aws_completer aws' >> .bashrc && \
