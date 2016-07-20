@@ -18,7 +18,7 @@ USER devops
 
 # Install awscli, ansible using virtualenv under devops user
 RUN mkdir .aws data && \
-    virtualenv venv && \
+    python -m virtualenv venv && \
     ./venv/bin/pip install awscli && \
     ./venv/bin/pip install boto && \
     ./venv/bin/pip install markupsafe && \
