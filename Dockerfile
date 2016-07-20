@@ -8,6 +8,7 @@ RUN apt-get update && \
             libssl-dev \
             libffi-dev \
             wget \
+            screen \
             git && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
