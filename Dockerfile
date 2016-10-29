@@ -7,6 +7,8 @@ RUN apt-get update && \
             openssh-client \
             libssl-dev \
             libffi-dev \
+            groff \
+            less \
             wget \
             screen \
             git && \
