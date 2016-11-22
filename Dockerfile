@@ -28,6 +28,7 @@ RUN mkdir .aws data && \
     ./venv/bin/pip install "pywinrm>=0.1.1" && \
     ./venv/bin/pip install ansible && \
     ./venv/bin/pip install aws-shell && \
+    ./venv/bin/pip install dopy && \
     echo 'source ~/venv/bin/activate' >> .bashrc && \
     echo 'complete -C aws_completer aws' >> .bashrc && \
     rm -rf ~/.pip/cache/
