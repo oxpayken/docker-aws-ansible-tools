@@ -9,6 +9,7 @@ RUN apt-get update && \
             libffi-dev \
             groff \
             less \
+            jq \
             wget \
             screen \
             vim \
