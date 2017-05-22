@@ -23,6 +23,7 @@ RUN mkdir .aws data && \
     python -m virtualenv venv && \
     ./venv/bin/pip install awscli && \
     ./venv/bin/pip install boto && \
+    ./venv/bin/pip install boto3 && \
     ./venv/bin/pip install markupsafe && \
     ./venv/bin/pip install "pywinrm>=0.1.1" && \
     ./venv/bin/pip install ansible && \
